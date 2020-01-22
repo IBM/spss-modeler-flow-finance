@@ -8,10 +8,10 @@ We will be using existing financial data to train and evaluate the model that is
 
 ## Prerequisites
 
-To complete the tutorials in this learning path, you will need the following:
-*  An IBM Cloud account. You can obtain a free trial account, which gives you access to IBM Cloud, IBM Watson Studio, and the IBM Watson Machine Learning Service. 
+To complete this tutorial, you will need the following:
+* An IBM Cloud account. You can obtain a free trial account by going to https://cloud.ibm.com if you don't already have one.
 * IBM Watson Studio Desktop. You can download it from the link: https://www.ibm.com/products/watson-studio-desktop. You will be able to get a free trial version of IBM Watson Studio Desktop which also includes SPSS modeler flow feature.
-* IBM Cloud Object Storage. You should create IBM Cloud Object Storage by signing to IBM Cloud and choose service from the catalog.
+* As an option to Watson Studio Desktop, you can use IBM Cloud and create services like IBM Watson Studio, IBM Watson Machine Learning Service, and IBM Cloud Object Storage to achieve the following in IBM cloud as well.
 
 ## Estimated time
 
@@ -154,7 +154,7 @@ In order to predict the future behavior of the customer we need to build and tra
 
 ![Mortgage Model](images/mortgage-data-transformed.png)
 
-7. To evaluate the data, let's use the graph node `Evaluation`. Click three dots and select `Open`. Keep all the defaults as it will use the `_transformed` column for evaluation. And click `Run` on the same node.
+7. To evaluate the model, let's use the graph node `Evaluation`. Click three dots and select `Open`. Keep all the defaults as it will use the `_transformed` column for evaluation. And click `Run` on the same node.
 
 ![Mortgage Evaluation](images/mortgage_evaluation.png)
 
@@ -162,3 +162,6 @@ To see the output select the output that it generates after clicking `Run`.
 
 ![Mortgage Evaluation](images/mortgage_evaluation-1.png)
 
+The above graph is a `Cumulative Gains chart` used to evaluate the model created. For cumulative charts, higher lines indicate better models, especially on the left side of the chart. In many cases, when comparing multiple models the lines will cross, so that one model will be higher in one part of the chart and another will be higher in a different part of the chart. In this case, you need to consider what portion of the sample you want (which defines a point on the x axis) when deciding which model to choose.  
+
+Since the model is now created we are ready to apply the model to test data. Since the IBM Watson Studio Desktop doesn't allow to save the model, applying the model to test data is not part of this tutorial. You will need to use the perpetual version of Watson Studio Desktop.
