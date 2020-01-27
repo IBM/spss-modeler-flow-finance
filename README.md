@@ -2,16 +2,16 @@
 
 Building, training and evaluating machine learning models can be done graphically using the SPSS Modeler flow feature in IBM® Watson™ Studio Desktop. IBM Watson SPSS Modeler flows in Watson Studio desktop provide an interactive environment for quickly building machine learning pipelines that flow data from ingestion to transformation to model building and evaluation, without needing any code.
 
-This tutorial uses the SPSS Modeler components in IBM® Watson™ Studio Desktop to build, train and evaluate machine learning product-based classifier on customer profile to predict whether a customer would subscribe to a mortgage, savings, or pension account.
+This tutorial uses the SPSS Modeler components in IBM® Watson™ Studio Desktop to build, train and evaluate machine learning product-based classifier on customer profile to predict whether a customer would subscribe to a mortgage, savings, or pension account. As an alternative a user could use IBM Watson Studio in IBM Cloud.
 
 We will be using existing financial data to train and evaluate the model that is available here:  https://github.com/IBM/spss-modeler-flow-finance/data
 
 ## Prerequisites
 
 To complete this tutorial, you will need the following:
-* An IBM Cloud account. You can obtain a free trial account by going to https://cloud.ibm.com if you don't already have one.
+
 * IBM Watson Studio Desktop. You can download it from the link: https://www.ibm.com/products/watson-studio-desktop. You will be able to get a free trial version of IBM Watson Studio Desktop which also includes SPSS modeler flow feature.
-* As an option to Watson Studio Desktop, you can use IBM Cloud and create services like IBM Watson Studio, IBM Watson Machine Learning Service, and IBM Cloud Object Storage to achieve the following in IBM cloud as well.
+* As an option to Watson Studio Desktop, you can use IBM Cloud and create services like IBM Watson Studio, IBM Watson Machine Learning Service, and IBM Cloud Object Storage to achieve the following in IBM cloud as well. For this you need to create an IBM Cloud account. You can obtain a free trial account by going to https://cloud.ibm.com if you don't already have one.
 
 ## Estimated time
 
@@ -23,7 +23,7 @@ Once you have the pre-requisites ready, you can now continue with the below step
 
 ## Create model flow
 
-Lets upload the initila flow and explore in the upcoming steps. After finishing the IBM Watson Studio Desktop installation perform the following:
+Lets upload the initial flow and explore in the upcoming steps. After finishing the IBM Watson Studio Desktop installation perform the following:
 
 1. Create a new empty project and provide a name.
 
